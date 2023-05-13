@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Shape 1`] = `
+<div>
+  <div
+    style="background-color: rgb(255, 255, 255); box-shadow: 0px 2px 4px #A6AAAF; padding: 16px; height: 100vw; width: 100vh;"
+  >
+    Shape
+  </div>
+</div>
+`;

@@ -63,7 +63,7 @@
             "attributes": { "category": "size", "type": "shadow" }
           },
           "stack": {
-            "value": "0px 4px 8px",
+            "value": "0px 2px 4px",
             "attributes": { "category": "size", "type": "shadow" }
           }
         },
