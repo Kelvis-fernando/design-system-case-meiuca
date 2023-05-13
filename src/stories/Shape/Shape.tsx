@@ -1,11 +1,5 @@
-import React, { ReactNode } from "react";
 import { getShapeStyle } from "./Shape.style";
-
-export interface ShapeProps {
-  children: ReactNode;
-  width?: string;
-  height?: string;
-}
+import { ShapeProps } from "../../types/ShapeProps";
 
 export const Shape: React.FC<ShapeProps> = ({
   children,

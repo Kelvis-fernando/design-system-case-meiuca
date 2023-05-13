@@ -10,5 +10,6 @@ export const getShapeStyle = (
     padding: tokens.spacing.size.xxxs.value,
     height: height,
     width: width,
+    borderRadius: tokens.radius.size.sm.value,
   };
 };

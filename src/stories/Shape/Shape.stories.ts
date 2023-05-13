@@ -13,7 +13,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: `Ola`,
+    children: "Children inside of shape component",
     width: "100px",
     height: "100px",
   },
