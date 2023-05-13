@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div>
+  <button
+    style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-radius: 8px; padding: 8px; font-weight: 700; border: 1px solid #000000; cursor: pointer; font-family: 'Archivo';"
+    type="button"
+  >
+    Button
+  </button>
+</div>
+`;

@@ -28,5 +28,6 @@ export const getButtonStyle = (
       ? tokens.border.size.hairline.value
       : `solid ${tokens.border.size.hairline.value} ${tokens.neutral.color[5].value}`,
     cursor: "pointer",
+    fontFamily: tokens.font.family.highlight.value,
   };
 };
