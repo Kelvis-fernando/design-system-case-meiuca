@@ -1,12 +1,7 @@
 import React from "react";
 import { getButtonStyle } from "./Button.style";
+import { ButtonProps } from "../../types/ButtonProps";
 
-interface ButtonProps {
-  primary?: boolean;
-  size?: "small" | "medium" | "large";
-  label: string;
-  onClick?: () => void;
-}
 export const Button = ({
   primary = false,
   size = "medium",
