@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Subtitle 1`] = `
+<div>
+  <p
+    style="color: rgb(166, 170, 175); font-size: 14px; font-family: 'Archivo';"
+  >
+    Subtitle
+  </p>
+</div>
+`;
+
+exports[`should render heading 1`] = `
+<div>
+  <p
+    style="color: rgb(166, 170, 175); font-family: 'Archivo';"
+  >
+    Heading
+  </p>
+</div>
+`;
