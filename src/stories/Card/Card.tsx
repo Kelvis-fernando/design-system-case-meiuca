@@ -2,17 +2,20 @@ import { ReactNode } from "react";
 import { Shape } from "../Shape/Shape";
 
 export interface CardProps {
-  image?: string;
+  width?: string;
+  height?: string;
   children: ReactNode;
 }
 
-export const Card: React.FC<CardProps> = ({ image, children, ...props }) => {
+export const Card: React.FC<CardProps> = ({
+  width,
+  height,
+  children,
+  ...props
+}) => {
   return (
-    <Shape>
-      <div {...props}>
-        {image && <img src={image} alt="Card banner" />}
-        {children}
-      </div>
+    <Shape width={width} height={height} {...props}>
+      {children}
     </Shape>
   );
 };
