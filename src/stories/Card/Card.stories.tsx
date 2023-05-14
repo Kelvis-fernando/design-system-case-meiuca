@@ -4,6 +4,7 @@ import { Card } from "./Card";
 import { Heading } from "../Heading/Heading";
 import { Subtitle } from "../Subtitle/Subtitle";
 import { Button } from "../Button/Button";
+import { Paragraph } from "../Paragraph/Paragraph";
 
 const meta = {
   title: "Components/Card",
@@ -34,6 +35,7 @@ export const Default: Story = {
         >
           <Heading level={1} text={"Tenis"} />
           <Subtitle text={"Vans Old skool"} />
+          <Paragraph text="Feito e entregue no Brasil" />
           <Button label={"Comprar"} />
         </div>
       </div>
