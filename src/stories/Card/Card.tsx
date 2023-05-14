@@ -1,11 +1,5 @@
-import { ReactNode } from "react";
+import { CardProps } from "../../types/CardProps";
 import { Shape } from "../Shape/Shape";
-
-export interface CardProps {
-  width?: string;
-  height?: string;
-  children: ReactNode;
-}
 
 export const Card: React.FC<CardProps> = ({
   width,
