@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render heading 1`] = `
+exports[`Heading renders with the correct level and text 1`] = `
 <div>
-  <h2
-    style="color: rgb(0, 0, 0); font-family: 'Archivo';"
+  <h1
+    style="color: rgb(0, 0, 0); font-family: 'Archivo'; margin: 4px;"
   >
-    Heading
-  </h2>
+    Example Heading
+  </h1>
 </div>
 `;

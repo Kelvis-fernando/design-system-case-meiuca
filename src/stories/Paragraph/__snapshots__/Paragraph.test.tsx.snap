@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Paragraph 1`] = `
+exports[`Paragraph renders paragraph with correct text and style 1`] = `
 <div>
   <p
     style="color: rgb(0, 0, 0); font-family: 'Archivo'; font-size: 16px;"
   >
-    Paragraph
+    Example paragraph text
   </p>
 </div>
 `;
