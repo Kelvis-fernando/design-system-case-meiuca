@@ -1,6 +1,6 @@
 import { tokens } from "../../../tokens/index";
 
-export const getSubtitleStyle = (size: string) => {
+export const subtitleStyle = (size: string) => {
   const subtitleSize = () => {
     switch (size) {
       case "sm":

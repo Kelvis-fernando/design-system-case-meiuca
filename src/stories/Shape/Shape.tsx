@@ -1,4 +1,4 @@
-import { getShapeStyle } from "./Shape.style";
+import { shapeStyle } from "./Shape.style";
 import { ShapeProps } from "../../types/ShapeProps";
 
 export const Shape: React.FC<ShapeProps> = ({
@@ -8,7 +8,7 @@ export const Shape: React.FC<ShapeProps> = ({
   ...props
 }) => {
   return (
-    <div style={getShapeStyle(width!, height!)} {...props}>
+    <div style={shapeStyle(width!, height!)} {...props}>
       {children}
     </div>
   );

@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { tokens } from "../../../tokens/index";
 import { Card } from "./Card";
 import { Heading } from "../Heading/Heading";
 import { Subtitle } from "../Subtitle/Subtitle";
 import { Button } from "../Button/Button";
 import { Paragraph } from "../Paragraph/Paragraph";
-import { CardContent } from "./Card.style";
+import { cardContent } from "./Card.style";
 
 const meta = {
   title: "Elements/Card",
@@ -25,7 +24,7 @@ export const Default: Story = {
           alt="tenis"
           style={{ width: "100%" }}
         />
-        <div style={CardContent}>
+        <div style={cardContent}>
           <Heading level={1} text={"Tenis"} />
           <Subtitle text={"Vans Old skool"} />
           <Paragraph text="Feito e entregue no Brasil" />

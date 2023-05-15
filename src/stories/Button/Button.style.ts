@@ -1,6 +1,6 @@
 import { tokens } from "../../../tokens/index";
 
-export const getButtonStyle = (
+export const buttonStyle = (
   primary: boolean,
   size: string
 ): React.CSSProperties => {

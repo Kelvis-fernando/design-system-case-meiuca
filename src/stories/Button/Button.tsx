@@ -1,5 +1,5 @@
 import React from "react";
-import { getButtonStyle } from "./Button.style";
+import { buttonStyle } from "./Button.style";
 import { ButtonProps } from "../../types/ButtonProps";
 
 export const Button = ({
@@ -9,7 +9,7 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   return (
-    <button type="button" style={getButtonStyle(primary, size)} {...props}>
+    <button type="button" style={buttonStyle(primary, size)} {...props}>
       {label}
     </button>
   );

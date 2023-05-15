@@ -1,7 +1,7 @@
 import React from "react";
 import { tokens } from "../../../tokens";
 
-export const CardContent: React.CSSProperties = {
+export const cardContent: React.CSSProperties = {
   padding: tokens.spacings.spacing.size.xxxs.value,
   display: "flex",
   flexDirection: "column",

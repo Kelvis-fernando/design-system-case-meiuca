@@ -1,6 +1,6 @@
 import { tokens } from "../../../tokens/index";
 
-export const getShapeStyle = (
+export const shapeStyle = (
   width: number,
   height: number
 ): React.CSSProperties => {
