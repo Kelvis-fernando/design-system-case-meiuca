@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { Paragraph } from "./Paragraph";
-import tokens from "../../../tokens/global.json";
+import { tokens } from "../../../tokens";
 
 describe("Paragraph", () => {
   test("renders paragraph with correct text and style", () => {
@@ -13,9 +13,9 @@ describe("Paragraph", () => {
     expect(paragraphElement).toBeInTheDocument();
     expect(container).toMatchSnapshot();
     expect(paragraphElement).toHaveStyle(`
-      color: ${tokens.neutral.color[5].value};
-      fontFamily: ${tokens.font.family.highlight.value};
-      fontSize: ${tokens.font.size.xs.value};
+      color: ${tokens.colors.neutral.color[5].value};
+      fontFamily: ${tokens.fonts.font.family.highlight.value};
+      fontSize: ${tokens.fonts.font.size.xs.value};
   `);
   });
 });
