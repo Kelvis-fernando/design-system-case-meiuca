@@ -4,8 +4,8 @@ import { Card } from "./Card";
 
 describe("Card", () => {
   test("renders with correct width and height", () => {
-    const width = "200px";
-    const height = "300px";
+    const width = 200;
+    const height = 300;
 
     const { container } = render(
       <Card
@@ -18,8 +18,8 @@ describe("Card", () => {
 
     const cardElement = screen.getByTestId("card");
 
-    expect(cardElement).toHaveStyle(`width: ${width}`);
-    expect(cardElement).toHaveStyle(`height: ${height}`);
+    expect(cardElement).toHaveStyle(`width: ${width}px`);
+    expect(cardElement).toHaveStyle(`height: ${height}px`);
     expect(container).toMatchSnapshot();
   });
 

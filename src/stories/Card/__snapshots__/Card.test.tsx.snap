@@ -4,7 +4,7 @@ exports[`Card renders with correct width and height 1`] = `
 <div>
   <div
     data-testid="card"
-    style="background-color: rgb(255, 255, 255); box-shadow: 0px 2px 4px #A6AAAF; height: 300px; width: 200px; border-radius: 8px;"
+    style="background-color: rgb(255, 255, 255); box-shadow: 0px 2px 4px #A6AAAF; width: 200px; height: 300px; border-radius: 8px;"
   />
 </div>
 `;
