@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { Heading } from "./Heading";
-import tokens from "../../../tokens/global.json";
+import { tokens } from "../../../tokens";
 
 describe("Heading", () => {
   test("renders with the correct level and text", () => {
@@ -24,9 +24,9 @@ describe("Heading", () => {
     const headingElement = screen.getByRole("heading", { level });
 
     expect(headingElement).toHaveStyle(`
-    color: ${tokens.neutral.color[5].value};
-    font-family: ${tokens.font.family.highlight.value};
-    margin: ${tokens.spacing.size.quarck.value};
+    color: ${tokens.colors.neutral.color[5].value};
+    font-family: ${tokens.fonts.font.family.highlight.value};
+    margin: ${tokens.spacings.spacing.size.quarck.value};
   `);
   });
 });
