@@ -3,7 +3,7 @@
 exports[`Subtitle renders subtitle text 1`] = `
 <div>
   <p
-    style="color: rgb(166, 170, 175); font-size: 14px; font-family: 'Archivo';"
+    style="color: rgb(166, 170, 175); font-family: 'Archivo';"
   >
     Example Subtitle
   </p>

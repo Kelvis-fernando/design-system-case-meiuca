@@ -1,6 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { Shape } from "./Shape";
+import { tokens } from "../../../tokens";
 
 describe("Shape", () => {
   test("applies the correct style to the shape", () => {
@@ -15,9 +16,9 @@ describe("Shape", () => {
 
     expect(container).toMatchSnapshot();
     expect(shapeElement).toHaveStyle(`
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px #A6AAAF;
+    background-color: ${tokens.colors.neutral.color[1].value};
+    border-radius: ${tokens.borders.radius.size.sm.value};
+    box-shadow: ${tokens.shadows.shadow.level[1].stack.value} ${tokens.colors.neutral.color[3].value};
     height: ${height};
     width: ${width};
   `);

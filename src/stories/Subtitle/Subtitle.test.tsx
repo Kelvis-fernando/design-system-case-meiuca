@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { Subtitle } from "./Subtitle";
-import tokens from "../../../tokens/global.json";
+import { tokens } from "../../../tokens";
 
 describe("Subtitle", () => {
   test("renders subtitle text", () => {
@@ -22,9 +22,9 @@ describe("Subtitle", () => {
     const subtitleElement = screen.getByText(text);
 
     expect(subtitleElement).toHaveStyle(`
-    color: ${tokens.neutral.color[3].value};
-    fontSize: ${tokens.font.size.xxs.value},
-    fontFamily: ${tokens.font.family.highlight.value};
+    color: ${tokens.colors.neutral.color[3].value};
+    fontSize: ${tokens.fonts.font.size.xxs.value},
+    fontFamily: ${tokens.fonts.font.family.highlight.value};
     `);
   });
 });
