@@ -8,7 +8,7 @@ import { Paragraph } from "../Paragraph/Paragraph";
 import { CardContent } from "./Card.style";
 
 const meta = {
-  title: "Components/Card",
+  title: "Elements/Card",
   component: Card,
   tags: ["autodocs"],
 } satisfies Meta<typeof Card>;
