@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import tokens from "../../../tokens/global.json";
+import { tokens } from "../../../tokens/index";
 import { Card } from "./Card";
 import { Heading } from "../Heading/Heading";
 import { Subtitle } from "../Subtitle/Subtitle";
@@ -26,7 +26,7 @@ export const Default: Story = {
         />
         <div
           style={{
-            padding: tokens.spacing.size.xxxs.value,
+            padding: tokens.spacings.spacing.size.xxxs.value,
             display: "flex",
             flexDirection: "column",
             textAlign: "center",

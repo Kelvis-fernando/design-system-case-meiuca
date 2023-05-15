@@ -1,7 +1,7 @@
-import tokens from "../../../tokens/global.json";
+import { tokens } from "../../../tokens/index";
 
 export const headingStyle: React.CSSProperties = {
-  color: tokens.neutral.color[5].value,
-  fontFamily: tokens.font.family.highlight.value,
-  margin: tokens.spacing.size.quarck.value,
+  color: tokens.colors.neutral.color[5].value,
+  fontFamily: tokens.fonts.font.family.highlight.value,
+  margin: tokens.spacings.spacing.size.quarck.value,
 };

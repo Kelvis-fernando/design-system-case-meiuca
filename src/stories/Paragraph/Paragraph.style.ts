@@ -1,7 +1,7 @@
-import tokens from "../../../tokens/global.json";
+import { tokens } from "../../../tokens/index";
 
 export const paragraphStyle: React.CSSProperties = {
-  color: tokens.neutral.color[5].value,
-  fontFamily: tokens.font.family.highlight.value,
-  fontSize: tokens.font.size.xs.value,
+  color: tokens.colors.neutral.color[5].value,
+  fontFamily: tokens.fonts.font.family.highlight.value,
+  fontSize: tokens.fonts.font.size.xs.value,
 };

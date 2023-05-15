@@ -1,4 +1,4 @@
-import tokens from "../../../tokens/global.json";
+import { tokens } from "../../../tokens/index";
 
 export const getButtonStyle = (
   primary: boolean,
@@ -7,27 +7,27 @@ export const getButtonStyle = (
   const setSize = () => {
     switch (size) {
       case "small":
-        return tokens.spacing.size.quarck.value;
+        return tokens.spacings.spacing.size.quarck.value;
       case "medium":
-        return tokens.spacing.size.nano.value;
+        return tokens.spacings.spacing.size.nano.value;
       case "large":
-        return tokens.spacing.size.xxxs.value;
+        return tokens.spacings.spacing.size.xxxs.value;
     }
   };
   return {
     color: primary
-      ? tokens.neutral.color[1].value
-      : tokens.neutral.color[5].value,
+      ? tokens.colors.neutral.color[1].value
+      : tokens.colors.neutral.color[5].value,
     backgroundColor: primary
-      ? tokens.brand.color.primary[3].value
-      : tokens.neutral.color[1].value,
-    borderRadius: tokens.radius.size.sm.value,
+      ? tokens.colors.brand.color.primary[3].value
+      : tokens.colors.neutral.color[1].value,
+    borderRadius: tokens.borders.radius.size.sm.value,
     padding: setSize(),
-    fontWeight: tokens.font.weight.bold.value,
+    fontWeight: tokens.fonts.font.weight.bold.value,
     border: primary
-      ? tokens.border.size.hairline.value
-      : `solid ${tokens.border.size.hairline.value} ${tokens.neutral.color[5].value}`,
+      ? tokens.borders.border.size.hairline.value
+      : `solid ${tokens.borders.border.size.hairline.value} ${tokens.colors.neutral.color[5].value}`,
     cursor: "pointer",
-    fontFamily: tokens.font.family.highlight.value,
+    fontFamily: tokens.fonts.font.family.highlight.value,
   };
 };
